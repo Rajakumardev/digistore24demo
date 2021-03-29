@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter as Router, Link, Route
+  BrowserRouter as Router, Link, Route, Switch
 } from 'react-router-dom';
 import Listing from './Pages/Listing/Listing';
 import Payment from './Pages/Payment/Payment';
@@ -12,20 +12,20 @@ function App() {
       <div className="App">
         <Link to="/listing">Products</Link>
       </div>
-      <switch>
+      <Switch>
         <Route exact path='/'>
           <Listing />
         </Route>
         <Route exact path='/listing'>
           <Listing />
         </Route>
-        <Route exact path='/payemnt'>
+        <Route exact path='/payemnt/:pid/:fmid'>
           <Payment />
         </Route>
         <Route exact path='/success'>
           <Success />
         </Route>
-      </switch>
+      </Switch>
     </Router>
   );
 }
