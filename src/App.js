@@ -10,7 +10,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Link to="/listing">Products</Link>
+        <Link to="/listing">Products</Link><br />
+        <Link to='/payment/339549/125421'>sample payment page</Link>
       </div>
       <Switch>
         <Route exact path='/'>
@@ -19,7 +20,7 @@ function App() {
         <Route exact path='/listing'>
           <Listing />
         </Route>
-        <Route exact path='/payemnt/:pid/:fmid'>
+        <Route exact path='/payment/:pid/:fmid'>
           <Payment />
         </Route>
         <Route exact path='/success'>

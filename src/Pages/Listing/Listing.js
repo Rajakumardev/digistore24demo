@@ -5,7 +5,7 @@ const Listing = () => {
     return (
         <div style={{ padding: "2rem" }}>
             <h4>Product Name : Test Product 1</h4>
-            <Link to='/payemnt/381482/125421'>Buy Now</Link>
+            <Link to='/payment/381482/125421'>Buy Now</Link>
             <hr></hr>
         </div>
     )
